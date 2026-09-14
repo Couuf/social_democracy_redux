@@ -89,6 +89,7 @@ Council capacity: [+ council_resources +]
 - @militia: Utilize the councils to expand the military capacities of the workers.
 - @fund_councils: Divert government funds to prop up the councils.
 - @donate_councils: Donate SPD resources to the councils.
+- @integrate_works_councils: placehpolder
 
 @expand_reichstag
 choose-if: (not left_soviets and not kpd_included) or (spd_r+sapd_r+kpd_r >= 50)
@@ -128,6 +129,10 @@ choose-if: council_resources >= 1
 on-arrival: rb_militancy += (council_resources/50)*(left_strength/100); rfb_militancy += (council_resources/100); rfb_militancy += (council_resources/100) if kpd_included; reformist_dissent += 5; z_relation -= 5; ddp_relation -= 5; dvp_relation -= 5; coup_progress += 2; council_resources -= 1
 
 Using the councils as framework, we distribute arms amongst the workers, and begin to train them into closer-knit workers' militias.
+
+@integrate_works_councils
+subtitle: placeholder
+on-arrival: pro_republic +=1
 
 
 @nothing
