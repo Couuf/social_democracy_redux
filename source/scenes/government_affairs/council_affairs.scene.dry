@@ -89,7 +89,6 @@ Council capacity: [+ council_resources +]
 - @militia: Utilize the councils to expand the military capacities of the workers.
 - @fund_councils: Divert government funds to prop up the councils.
 - @donate_councils: Donate SPD resources to the councils.
-- @integrate_works_councils: placehpolder
 
 @expand_reichstag
 choose-if: (not left_soviets and not kpd_included) or (spd_r+sapd_r+kpd_r >= 50)
