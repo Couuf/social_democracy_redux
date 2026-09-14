@@ -133,6 +133,12 @@ Using the councils as framework, we distribute arms amongst the workers, and beg
 subtitle: placeholder
 on-arrival: pro_republic +=1
 
+@fund_councils
+subtitle: -1 Budget
+on-arrival: budget -= 1; council_resources += 5
+
+We have succesfully diverted government funds to prop up the works councils! The bourgeois parties are not pleased.
+
 
 @nothing
 view-if: spd_soviets
